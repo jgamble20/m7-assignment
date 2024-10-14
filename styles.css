@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    margin-bottom: 40px;
+}
+@media (min-width: 600px) { 
+    .item {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+}
+.navbar {
+    background-color: #c99149; 
+    overflow: hidden;
+}
+.navbar ul {
+    list-style-type: none; 
+    margin: 0; 
+}
+.navbar li {
+    float: left;
+}
+.navbar a {
+    display: block; 
+    color: rgb(71, 66, 52); 
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none; 
+}
+
+.navbar a:hover {
+    background-color: hsl(46, 47%, 71%); 
+    color: black; 
+}
+.flex-container {
+    display: flex;
+    margin: 20px 0; 
+}
+.makeMeStack {
+    background-color: #c99149;
+    border: 5px solid #ffffff; 
+    padding: 20px; 
+    text-align: center; 
+}
+.accordion {
+    border: 5px solid #ffffff; 
+    border-radius: 10px; 
+    margin: 20px 0; 
+}
+.accordion-header {
+    background-color: #f2f2f2; 
+    cursor: pointer; 
+    padding: 10px; 
+    border-bottom: 1px solid #ffffff; 
+    font-weight: bold; 
+}
+.accordion-content {
+    display: none; 
+    padding: 10px; 
+    border-top: 1px solid #ffffff; }
+.accordion {
+    border: 5px solid #c99149; 
+    border-radius: 10px; 
+    margin: 20px 0; 
+    background-color: #e7d688; 
+}
+.accordion-header {
+    background-color: #f79f2d ;
+    cursor: pointer; 
+    padding: 10px; 
+    border-bottom: 1px solid #f79f2d; 
+    font-weight: bold; 
+    color: white; 
+    transition: background-color 0.3s;
+}
+.accordion-header:hover {
+    background-color: #f79f2d; 
+}
+.accordion-content {
+    display: none; 
+    padding: 10px; 
+    border-top: 1px solid #f79f2d; 
+    background-color: rgb(247, 222, 154);
+    color: #292828; 
+}
+.container {
+    display: flex;              
+    flex-direction: column;     
+    align-items: center;    
+    margin: 20px;           
+}
+.item {
+    background-color: #b89e7d; 
+    border: 5px solid #ffffff;   
+    padding: 20px;            
+    margin: 10px;              
+    text-align: center;       
+    width: 80%;              }

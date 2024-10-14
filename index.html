@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="flex-container">
+        <div class="makeMeStack" style="flex-grow: 1">2nd</div>
+        <div class="makeMeStack" style="flex-grow: 1">Style</div>
+    </div>
+    <div class="accordion">
+        <h3 class="accordion-header">Click right here </h3>
+        <div class="accordion-content">
+            <p>List of things I can do...</p>
+    
+        <div class="container">
+        <div class="item">My videos</div>
+        <div class="item">My behind the scenes</div>
+        <div class="item">My designs</div>
+        <div class="item">My Photos</div>
+    </div>
+    <div id="draggable" class="ui-widget-content">
+       Draggable Copyright by Jeremy Gamble 2024
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+            $("#draggable").draggable();
+        });
+    </script>
+
+
+<script>
+    $(document).ready(function() {
+        $(".accordion-header").click(function() {
+            $(this).next(".accordion-content").slideToggle();
+            $(".accordion-content").not($(this).next()).slideUp();
+        });
+    });
+</script>
+</body>
+</html>
